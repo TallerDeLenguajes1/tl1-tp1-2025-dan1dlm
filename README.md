@@ -12,4 +12,14 @@ Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos paso
    ignorado.txt
 3. Guardar los cambios y asegurarnos de que Git no esté rastreando el archivo:
    ```sh
-   git rm --cached ignorado.txt  # Elimina el archivo del tracking de Git
+   git rm --cached ignorado.txt  
+4. Hacer un commit para aplicar los cambios:
+   ```sh
+   git commit -m "Agregado ignorado.txt a .gitignore"
+5. Finalmente, subir los cambios al repositorio remoto si es necesario:
+   ```sh
+   git push origin main  
+
+## Cosas a tener en cuenta
+* `.gitignore` no afecta archivos que ya han sido versionados previamente. Si `ignorado.txt` ya estaba en el repositorio antes de ser agreagado a `.gitignore`, hay que eliminarlo con `git rm --cached`
+* Podemos ignorar múltiples archivos y carpetas agregando más reglas en `.gitignore`.
