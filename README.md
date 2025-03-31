@@ -10,3 +10,6 @@ Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos paso
 2. Agregar la siguiente línea al archivo `.gitignore`:
    ```sh
    ignorado.txt
+3. Guardar los cambios y asegurarnos de que Git no esté rastreando el archivo:
+   ```sh
+   git rm --cached ignorado.txt  # Elimina el archivo del tracking de Git
