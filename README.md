@@ -25,4 +25,4 @@ Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos paso
 * Podemos ignorar múltiples archivos y carpetas agregando más reglas en `.gitignore`.
 
 #Autor ✒️
-* [dan1dlm] (https://github.com/dan1dlm)
+* [dan1dlm](https://github.com/dan1dlm)
