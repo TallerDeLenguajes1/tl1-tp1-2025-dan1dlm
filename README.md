@@ -23,3 +23,6 @@ Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos paso
 ## Cosas a tener en cuenta
 * `.gitignore` no afecta archivos que ya han sido versionados previamente. Si `ignorado.txt` ya estaba en el repositorio antes de ser agreagado a `.gitignore`, hay que eliminarlo con `git rm --cached`
 * Podemos ignorar múltiples archivos y carpetas agregando más reglas en `.gitignore`.
+
+#Autor ✒️
+* [dan1dlm] (https://github.com/dan1dlm)
