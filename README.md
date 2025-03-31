@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kl-E8VQf)
-# Que es .gigignore
-`.gitignore` es un archivo utilizado en proyectos gestionados con Git para especificar qué archivos o directorios no deben ser rastreados ni versionados por Git. Esto incluye archivos temporales, compilados, configuraciones locales, y otros que no son relevantes para el control de versiones o el trabajo en equipo.
+# ¿Que es .gitignore? 🔐​
+    `.gitignore` es un archivo utilizado en proyectos gestionados con Git para especificar qué archivos o directorios no deben ser rastreados ni versionados por Git. Esto incluye archivos temporales, compilados, configuraciones locales, y otros que no son relevantes para el control de versiones o el trabajo en equipo.
 
-## ¿Por qué es conveniente incluirlo?
+## ¿Por qué es conveniente incluirlo? ​✅​
 1. Evitar archivos innecesarios en el repositorio: Muchos archivos generados por el entorno de desarrollo, como archivos temporales de editores, logs, binarios, o configuraciones locales (como node_modules en proyectos de Node.js), no deben ser versionados porque no aportan valor al proyecto y pueden aumentar el tamaño del repositorio innecesariamente.
 
 2. *Mantener el repositorio limpio*: Incluyendo un .gitignore bien configurado, se asegura que Git ignore archivos que no son parte del código fuente, evitando que se suban archivos basura al repositorio.
@@ -11,7 +11,7 @@
 
 4. *Mejorar el rendimiento*: Al evitar que Git rastree archivos innecesarios, se mejora el rendimiento tanto a nivel local como en el servidor de Git (GitHub, GitLab, Bitbucket, etc.), ya que se reduce el tamaño del repositorio.
 
-## ¿Cuándo se debe hacer?
+## ¿Cuándo se debe hacer? ​✅​
 * *Desde el inicio del proyecto*: Lo ideal es configurar el archivo .gitignore al inicio del proyecto, antes de realizar los primeros commits. Esto asegura que los archivos no deseados no sean rastreados desde el principio.
 
 * *Cuando se añaden archivos generados automáticamente*: Si se están generando archivos automáticamente (por ejemplo, archivos binarios, archivos de log, o node_modules en un proyecto de Node.js), es importante agregar esos patrones al .gitignore para que Git los ignore en futuros commits.
@@ -20,7 +20,7 @@
 
 * *Cuando se detectan archivos innecesarios ya versionados*: Si se detectan archivos innecesarios que ya han sido versionados (por ejemplo, archivos temporales que han sido accidentalmente añadidos a Git), se debe modificar el .gitignore y luego eliminar esos archivos del repositorio usando el comando `git rm`.
 
-## ¿Cómo ignorar un archivo?
+## ¿Cómo ignorar un archivo? ​⌨️​
 Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos pasos:
 
 1. Crear o editar el archivo `.gitignore` en el directorio raíz del repositorio.
@@ -37,7 +37,7 @@ Si queremos ignorar un archivo llamado `ignorado.txt`, debemos seguir estos paso
    ```sh
    git push origin main  
 
-## Cosas a tener en cuenta
+## Cosas a tener en cuenta 🤔​
 * `.gitignore` no afecta archivos que ya han sido versionados previamente. Si `ignorado.txt` ya estaba en el repositorio antes de ser agreagado a `.gitignore`, hay que eliminarlo con `git rm --cached`
 * Podemos ignorar múltiples archivos y carpetas agregando más reglas en `.gitignore`.
 
